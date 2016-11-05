@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <ScrollView android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="518dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <EditText android:id="@+id/editText"
+                android:editable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:layout_below="@+id/textView"
+                android:layout_alignLeft="@+id/subtractButton"
+                android:layout_alignStart="@+id/subtractButton"
+                android:layout_alignRight="@+id/addButton"
+                android:layout_alignEnd="@+id/addButton"
+                android:ellipsize="start"
+                android:clickable="false"
+                android:gravity="center_horizontal">
+
+                <requestFocus></requestFocus>
+            </EditText>
+
+            <Button android:id="@+id/addButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:layout_below="@+id/editText"
+                android:layout_toRightOf="@+id/resetButton"
+                android:layout_toEndOf="@+id/resetButton" />
+
+            <Button android:id="@+id/subtractButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-1"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/editText"
+                android:layout_toLeftOf="@+id/resetButton"
+                android:layout_toStartOf="@+id/resetButton" />
+
+            <Button android:id="@+id/resetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/editText"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBottom="@+id/minus5button" />
+
+            <Button
+                android:id="@+id/minus5button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-5"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/subtractButton"
+                android:layout_alignLeft="@+id/subtractButton"
+                android:layout_alignStart="@+id/subtractButton" />
+
+            <Button
+                android:id="@+id/add5button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+5"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignTop="@+id/minus5button"
+                android:layout_toRightOf="@+id/resetButton"
+                android:layout_toEndOf="@+id/resetButton" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Life Count"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Commander Cost (Mutiply by 2 to get tax)"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/resetButton"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/commander_cost"
+                android:editable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:ellipsize="start"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/resetCommanderCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/commander_cost"
+                android:layout_alignLeft="@+id/commander_cost"
+                android:layout_alignStart="@+id/commander_cost" />
+
+            <Button
+                android:id="@+id/incCommanderCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignTop="@+id/resetCommanderCost"
+                android:layout_alignRight="@+id/commander_cost"
+                android:layout_alignEnd="@+id/commander_cost" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Experience Counters"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/resetCommanderCost"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/e_counters"
+                android:editable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:ellipsize="start"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/resetExpCounters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/e_counters"
+                android:layout_alignLeft="@+id/e_counters"
+                android:layout_alignStart="@+id/e_counters" />
+
+            <Button
+                android:id="@+id/incExpCounters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignTop="@+id/resetExpCounters"
+                android:layout_alignRight="@+id/e_counters"
+                android:layout_alignEnd="@+id/e_counters" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Poison Counters"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/resetExpCounters"
+                android:layout_centerHorizontal="true" />
+
+            <EditText
+                android:id="@+id/p_counters"
+                android:editable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:ellipsize="start"
+                android:clickable="false"
+                android:gravity="center_horizontal"
+                android:layout_below="@+id/textView4"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/decPCounters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-1"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/p_counters"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/resetPCounters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignTop="@+id/decPCounters"
+                android:layout_alignLeft="@+id/textView2"
+                android:layout_alignStart="@+id/textView2" />
+
+            <Button
+                android:id="@+id/incPCounters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+1"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/p_counters"
+                android:layout_toRightOf="@+id/decPCounters"
+                android:layout_toEndOf="@+id/decPCounters" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

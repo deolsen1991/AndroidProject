@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MTGCardSearcher</string>
+    <string name="action_settings">Settings</string>
+    <string name="button2">To Life Counter.</string>
+    <string name="button">Search for cards by name.</string>
+    <string name='hint'>Card Name</string>
+    <string name="activity_details">Card Details</string>
+    <string name="life_counterActivity">Commander Life Counter</string>
+</resources>
